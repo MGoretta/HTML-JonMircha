@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aprendiendo HTML</title>
     <meta name="description" content="Curso de HTML con Jon Mircha">
+    <link rel="canonical" href="http://tudominio.com/la-url-canonica">
+    <link rel="icon" href="img/pizza-png.png">
+    <link rel="apple-touch-icon" href="img/pizza-png.png">
+    <meta name="theme-color" content="#FF6600">
     <style>
         h2{
             color: orangered;
@@ -40,6 +44,7 @@
         <li><a href="index.html#audio-video">Audio y video</a></li>
         <li><a href="index.html#Iframes">Iframes</a></li>
         <li><a href="index.html#formularios">Formularios</a></li>
+        <li><a href="index.html#data-attributes">Data Attributes</a></li>
     </ul>
     <hr>
     <h2 id="encabezados">Encabezados HTML</h2>
@@ -775,7 +780,7 @@ c-78 -27 -124 -27 -147 -1 -20 22 -50 27 -42 8z"/>
         <option value="pt">Portugués</option>
     </select>
     <p>Elige tu lenguaje de programación favorito</p>
-    <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+    <input type="radio" name="lenguaje" id="radio-js" value="js">
     <label for="radio-js">Javascript</label>
     <br>
     <input type="radio" name="lenguaje" id="radio-py" value="py" checked>
@@ -786,29 +791,59 @@ c-78 -27 -124 -27 -147 -1 -20 22 -50 27 -42 8z"/>
     <br>
     <p>Elige tus intereses</p>
     <label>
-        <input type="checkbox" name="interes-deportes" value="deportes">
+        <input type="checkbox" name="interes" value="deportes">
         Deportes
     </label>
     <label>
-        <input type="checkbox" name="interes-salud" value="salud">
+        <input type="checkbox" name="interes" value="salud" >
         Salud
     </label>
     <label>
-        <input type="checkbox" name="interes-finanzas" value="finanzas">
+        <input type="checkbox" name="interes" value="finanzas" checked>
         Finanzas
     </label>
     <label>
-        <input type="checkbox" name="interes-politica" value="politica">
+        <input type="checkbox" name="interes" value="politica">
         Política
     </label>
     <label>
-        <input type="checkbox" name="interes-ecologia" value="ecologia">
+        <input type="checkbox" name="interes" value="ecologia" checked>
         Ecología
     </label>
+    <p>
+        <label>
+            <input type="checkbox" name="terminos">
+            ¿Aceptas los términos y condiciones?
+        </label>
+    </p>
+    <br>
     <input type="submit">
     <br>
     <input type="reset">
 </form>
+    <h4>Formulario de contacto</h4>
+    <form action="https://formsubmit.co/maugoretta@gmail.com" method="post">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Nombre solo acepta letras y espacios en blanco" required>
+        <br>
+        <input type="email" name="correo" placeholder="Escribe tu correo" pattern="^(\w+[/./-]?){1,}@[a-z]+[/.]\w{2,}$" title="Formato de correo inválido" required>
+        <br>
+        <textarea name="comentarios" cols="30" rows="10" required></textarea>
+        <br>
+        <input type="submit">
+    </form>
+<a href="index.html#inicio">🆙</a>
+<hr>
+<h2 id="data-attributes">Data Attributes</h2>
+<ul>
+    <li data-id="1" data-name="spring">Primavera</li>
+    <li data-id="2" data-name="summer">Verano</li>
+    <li data-id="3" data-name="autumn">Otoño</li>
+    <li data-id="4" data-name="winter">Invierno</li>
+</ul>
+<a href="index.html#inicio">🆙</a>
+<hr>
+<h2 id="metas-SEO">Metaetiquetas para SEO</h2>
+
 <a href="index.html#inicio">🆙</a>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <script>
