@@ -763,6 +763,52 @@ c-78 -27 -124 -27 -147 -1 -20 22 -50 27 -42 8z"/>
     <br>
     <input type="reset">
 </form>
+<h4>Selects, checkbox y radios</h4>
+<form>
+    <p>Elige tu idioma</p>
+    <select name="idioma" required>
+        <option value="">elige la tuya</option>
+        <option value="es">Español</option>
+        <option value="en">Inglés</option>
+        <option value="fr">Francés</option>
+        <option value="it" selected>Italiano</option>
+        <option value="pt">Portugués</option>
+    </select>
+    <p>Elige tu lenguaje de programación favorito</p>
+    <input type="radio" name="lenguaje" id="radio-js" value="js" required>
+    <label for="radio-js">Javascript</label>
+    <br>
+    <input type="radio" name="lenguaje" id="radio-py" value="py" checked>
+    <label for="radio-py">Python</label>
+    <br>
+    <input type="radio" name="lenguaje" id="radio-php" value="php">
+    <label for="radio-php">PHP</label>
+    <br>
+    <p>Elige tus intereses</p>
+    <label>
+        <input type="checkbox" name="interes-deportes" value="deportes">
+        Deportes
+    </label>
+    <label>
+        <input type="checkbox" name="interes-salud" value="salud">
+        Salud
+    </label>
+    <label>
+        <input type="checkbox" name="interes-finanzas" value="finanzas">
+        Finanzas
+    </label>
+    <label>
+        <input type="checkbox" name="interes-politica" value="politica">
+        Política
+    </label>
+    <label>
+        <input type="checkbox" name="interes-ecologia" value="ecologia">
+        Ecología
+    </label>
+    <input type="submit">
+    <br>
+    <input type="reset">
+</form>
 <a href="index.html#inicio">🆙</a>
 <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 <script>
